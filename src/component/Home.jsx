@@ -8,6 +8,7 @@ class Home extends Component {
             <ul>
                <li><Link to='/Workout'>Workouts</Link></li> 
                <li><Link to='/Video'>Video</Link></li>
+               {/* <li><Link to='/Masonry'>Masonry</Link></li> */}
             </ul>
                 
             </div>

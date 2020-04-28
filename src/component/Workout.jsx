@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-
+import Card from './Masonry'
 class Workout extends Component {
     
     showExercises = () => {
-        return this.props.exercises.map(eachExercise => {
+        return this.props.exercises.map((eachExercise,i) => {
           return (
-              <h2>{eachExercise.name}</h2>
+              <Card key={i} name={eachExercise.name}/>
           )
         })
     }

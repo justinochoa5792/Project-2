@@ -5,17 +5,17 @@ import Home from './component/Home';
 import Header from './component/Header';
 import Video from './component/Video';
 import axios from 'axios';
+import MasonryPage from './component/Masonry';
 
 
 class App extends Component {
 
  state={
-   exercises:[],
-   name:"justin"
+   exercises:[]
 } 
 
 componentDidMount=()=>{
-  axios.get("https://wger.de/api/v2/exercise/")
+  axios.get("https://wger.de/api/v2/exercisecategory/")
   .then(response=>{
     this.setState({exercises:response.data.results})})
 }
@@ -30,8 +30,10 @@ render() {
       <Header/>
      <Switch>
      <Route exact path='/' component={(props) =>   <Home {...props} /> }></Route>
-     <Route exact path='/Workout' component={(props) =>   <Workout {...props} exercises={this.state.exercises} name={this.state.name}/> }></Route>
+     <Route exact path='/Workout' component={(props) =>   <Workout {...props} exercises={this.state.exercises}/> }></Route>
      <Route exact path='/Video' component={(props) =>   <Video {...props} /> }></Route>
+     <Route exact path='/Masonry' component={(props) =>   <MasonryPage {...props}></MasonryPage> }></Route>
+    
       </Switch>
       </div>
     );

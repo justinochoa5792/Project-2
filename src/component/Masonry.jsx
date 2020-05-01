@@ -1,5 +1,6 @@
 import React from 'react';
 import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol } from 'mdbreact';
+import {Link} from 'react-router-dom'
 
 const CardExample = (props) => {
     console.log(props)
@@ -10,10 +11,10 @@ const CardExample = (props) => {
         <MDBCardBody>
           <MDBCardTitle>{props.name}</MDBCardTitle>
           <MDBCardText>
-            Some quick example text to build on the card title and make
-            up the bulk of the card&apos;s content.
+            A quick breakdown of muscle groups and there corresponding workouts.
           </MDBCardText>
-          <MDBBtn href="#">Enter</MDBBtn>
+          {/* <Link to={props.name}><MDBBtn href="">Enter</MDBBtn></Link> */}
+          <MDBBtn href="">Enter</MDBBtn>
         </MDBCardBody>
       </MDBCard>
     </MDBCol>

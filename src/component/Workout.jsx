@@ -19,7 +19,7 @@ class Workout extends Component {
     render() {
         return (
             <div>
-                Workout
+                <h3>Workout</h3>
              {this.showExercises()} 
 
             </div>

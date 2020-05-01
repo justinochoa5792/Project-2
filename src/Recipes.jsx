@@ -22,6 +22,8 @@ e.preventDefault()
     console.log(err)
 })
 }
+// for line 19. response.data.hits refers to the exact route to the recipes.
+// https://developer.mozilla.org/en-US/docs/Web/API/Event/target for lines 28-31
 
 handleChange(e){
 console.log(e.target.value)
@@ -36,7 +38,7 @@ renderRecipes(){
 return this.state.recipe.map(eachRecipe => {
 console.log(eachRecipe.recipe.label)
 return(
-    <h2 key={eachRecipe.recipe.label}>{eachRecipe.recipe.label}</h2>
+    <h3 key={eachRecipe.recipe.label}>{eachRecipe.recipe.label}</h3>
 )
 })
 }
@@ -47,7 +49,7 @@ return(
             <div>
                 Recipes 
                 <form onSubmit={(e)=>this.handleSubmit(e)}>
-                <input name="search" placeholder="search" onChange={(e)=>this.handleChange(e)}/>
+                <input name="search" placeholder="Find Recipe" onChange={(e)=>this.handleChange(e)}/>
                 <button>submit</button>
                 </form>
                 {this.renderRecipes()}

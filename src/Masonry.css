@@ -16,7 +16,7 @@ body {
     margin: 0 1rem 1rem 0;
     text-align: center;
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .masonry-with-columns div:nth-child(1) {
     height: 476px;

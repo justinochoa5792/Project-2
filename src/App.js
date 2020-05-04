@@ -3,7 +3,6 @@ import {Switch, Route} from 'react-router-dom';
 import Workout from './component/Workout';
 import Home from './component/Home';
 import Header from './component/Header';
-// import MasonryPage from './component/Masonry';
 import Recipes from './Recipes';
 import Exercise from './component/Exercises'
 import Youtube from './component/youtube'
@@ -18,7 +17,7 @@ class App extends Component {
     //console.log(this.state)
     return (
       <div>
-      <header><h1>Iron Workouts</h1></header>
+      {/* <header><h1>Iron Lifestyle</h1></header> */}
       <Header/>
      <Switch>
      <Route exact path='/' component={(props) =>   <Home {...props} /> }></Route>
@@ -33,7 +32,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-
-{/* <Route exact path='/Masonry' component={(props) =>   <MasonryPage {...props}></MasonryPage> }></Route> */}

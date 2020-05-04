@@ -7,9 +7,14 @@ class Home extends Component {
         return (
             <div>
             <ul>
-               <li><Link to='/Workout'><h3>Workouts</h3><Card/></Link></li> 
-               <li><Link to='/recipes'><h3>Recipes</h3><Card/></Link></li>
-               <li><Link to='/videos'><h3>Videos</h3><Card/></Link></li>
+               <li><Link to='/Workout'><Card name="Workouts" 
+               message=" A quick breakdown of muscle groups and there corresponding workouts." 
+               /></Link></li> 
+               <li><Link to='/recipes'><Card name="Recipes"
+                   message= "Recipes for all lifestyles."
+                   /></Link></li>
+               <li><Link to='/videos'><Card name="Videos"
+                   message="Informative videos for various lifts " /></Link></li>
             </ul>
                 
             </div>

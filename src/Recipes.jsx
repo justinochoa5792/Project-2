@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
+import RecipeDetails from './component/recipeDetails';
 
 
 class Recipes extends Component {
@@ -38,7 +39,10 @@ renderRecipes(){
 return this.state.recipe.map(eachRecipe => {
 console.log(eachRecipe.recipe.label)
 return(
-    <h3 key={eachRecipe.recipe.label}>{eachRecipe.recipe.label}</h3>
+    <RecipeDetails recipe={eachRecipe} />
+    // <a href={eachRecipe.recipe.url}>
+    // <h3 key={eachRecipe.recipe.label}>{eachRecipe.recipe.label}</h3>
+    // </a>
 )
 })
 }

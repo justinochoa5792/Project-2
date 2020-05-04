@@ -6,7 +6,7 @@ const CardExample = (props) => {
   return (
     <MDBCol>
       <MDBCard style={{backgroundColor:'white', width: "22rem" }}>
-        <MDBCardImage className="img-fluid" src='https://mdbootstrap.com/img/Photos/Others/images/43.jpg'waves />
+        <MDBCardImage className="img-fluid" src={props.image} waves />
         <MDBCardBody>
           <MDBCardTitle>{props.name}</MDBCardTitle>
           <MDBCardText>

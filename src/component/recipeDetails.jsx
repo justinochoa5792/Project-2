@@ -1,23 +1,19 @@
 import React, { Component } from 'react';
 
-class recipeDetails extends Component {
-
-  
-// recipeInfo(){
-//     return this.recipe.map(eachUrl =>{
-// console.log(eachUrl.recipe.url)
-// return (
-// eachUrl.recipe.url
-// )  
-// })
-// }
-//     render() {
-//         return (
-//             <div>
-//                 {this.recipeInfo()}
-//             </div>
-//         );
-//     }
-// }
+class RecipeDetails extends Component {
+state={
+    eachUrl:[]
 }
-export default recipeDetails;
+  
+    render() {
+        const { recipe } = this.props;
+        return (
+            <div>
+                <a href={recipe.recipe.url}>
+    <h3 key={recipe.recipe.label}>{recipe.recipe.label}</h3>
+    </a>
+            </div>
+        );
+    }
+}
+export default RecipeDetails;

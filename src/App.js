@@ -24,7 +24,6 @@ class App extends Component {
      <Route exact path='/recipes' component={(props) =>   <Recipes {...props}></Recipes> }></Route>
      <Route exact path='/exercises/:exerciseName' component={(props) =>   <Exercise {...props}/> }/>
      <Route exact path='/videos' component={(props) =>   <Youtube {...props}/> }/>
-     {/* <Route exact path='/recipesdetails' component={(props) =>   <recipeDetails {...props}></recipeDetails> }></Route> */}
       </Switch>
       </div>
     );

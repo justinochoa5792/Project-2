@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 
 class RecipeDetails extends Component {
-state={
-    eachUrl:[]
-}
   
     render() {
         const { recipe } = this.props;

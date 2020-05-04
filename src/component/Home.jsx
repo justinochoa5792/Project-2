@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import Card from './Masonry'
+import Card from './Masonry';
 
 class Home extends Component {
     render() {
         return (
-            <div>
+            <div className='Gym'>
+            {/* <img style={{width:'100vw',height:'85vh'}} src='/images/gymphoto.jpg' alt='gym'/> */}
             <ul>
                <li><Link to='/Workout'><Card name="Workouts" 
                message=" A quick breakdown of muscle groups and there corresponding workouts." 
@@ -19,9 +20,8 @@ class Home extends Component {
                    message="Informative videos for various lifts "
                    image="/images/images.jpg"
                     /></Link></li>
-                   
-            </ul>
-                
+             </ul>
+            <footer>Made with the Youtube Api & Edamam Api</footer>
             </div>
         );
     }

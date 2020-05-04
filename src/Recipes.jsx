@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
 import RecipeDetails from './component/recipeDetails';
+import { NUTRITION } from 'fitbit-api-handler/dist/constants/scopes';
 
 
 class Recipes extends Component {
@@ -50,8 +51,7 @@ return(
 
     render() {
         return (
-            <div>
-                Recipes 
+            <div className='Nutrition'>
                 <form onSubmit={(e)=>this.handleSubmit(e)}>
                 <input name="search" placeholder="Find Recipe" onChange={(e)=>this.handleChange(e)}/>
                 <button>submit</button>
@@ -63,3 +63,4 @@ return(
 }
 
 export default Recipes;
+{/* <img style={{height:'100vh', width:'100vw'}} src='/images/nutritionphoto.jpg' alt='fruits'/> */}

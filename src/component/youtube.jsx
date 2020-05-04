@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 const apiKey = 'AIzaSyBnylQec-AADrCC0J-2eszM2mEheDZtR7U';
-const channelID = 'UCclRFAVSUGe8cu9JkvY6nNA';
+const channelID = 'UC97k3hlbE-1rVN8y56zyEEA';
 const limit = 10;
 
 var url = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelID}&part=snippet,id&order=date&maxResults=${limit}`

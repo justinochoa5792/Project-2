@@ -38,6 +38,8 @@ footer{
   background-repeat: no-repeat;
   width: 100vw;
   height: 95vh;
+  display: grid;
+  text-align: center;
 }
 .Nutrition{
 background-image:url('/images/food.jpg');

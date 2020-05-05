@@ -19,21 +19,43 @@ class youtube extends Component {
         indexCount: 0
   }
 
+  
   posClicked = () => {
-        if (this.state.indexCount < 10) {
-              this.setState({ indexCount: this.state.indexCount += 1 });
-              this.getYoutubeData()
-              console.log('hello')
-
-        }
         console.log(this.state.indexCount);
+        if (this.state.indexCount < 9) {
+              if(this.state.indexCount===8){
+                  let newIndex=this.state.indexCount +1;
+                  this.setState({ 
+                        indexCount: newIndex,
+                        videoId: this.state.items[newIndex-1].id.videoId,
+                        videoId2: this.state.items[newIndex].id.videoId });   
+              }else{
+                  let newIndex=this.state.indexCount +1;
+                  this.setState({ 
+                        indexCount: newIndex,
+                        videoId: this.state.items[newIndex].id.videoId,
+                        videoId2: this.state.items[newIndex+1].id.videoId });
+
+              }
+        }
 
   }
   negClicked = () => {
         if (this.state.indexCount > 0) {
-              this.setState({ indexCount: this.state.indexCount -= 1 });
-              this.getYoutubeData()
-              console.log('hello')
+              if(this.state.indexCount===1){
+                  let newIndex=this.state.indexCount -1;
+                  this.setState({ 
+                        indexCount: newIndex,
+                        videoId: this.state.items[newIndex].id.videoId,
+                        videoId2: this.state.items[newIndex +1].id.videoId });
+
+              }else{
+                  let newIndex=this.state.indexCount -1;
+                  this.setState({ 
+                        indexCount: newIndex,
+                        videoId: this.state.items[newIndex].id.videoId,
+                        videoId2: this.state.items[newIndex-1].id.videoId });
+              }
         }
         console.log(this.state.indexCount);
 
@@ -47,7 +69,8 @@ class youtube extends Component {
               console.log(res);
               this.setState({
                     items: res.items,
-                    videoId: res.items[this.state.indexCount].id.videoId
+                    videoId: res.items[this.state.indexCount].id.videoId,
+                    videoId2: res.items[this.state.indexCount+1].id.videoId
               })
 
         })
@@ -61,9 +84,12 @@ class youtube extends Component {
         return (
               <div>
               <h2>Lifting Videos</h2>
-                    <iframe width="560" height="315" src={`https://www.youtube.com/embed/${this.state.videoId}`} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>         
+                    <iframe width="560" height="315" src={`https://www.youtube.com/embed/${this.state.videoId}`} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     <button onClick={this.negClicked}>  Previous Video  </button>
-                    <button onClick={this.posClicked}>  Next Video    </button>
+                    <button onClick={this.posClicked}>  Next Video    </button>   
+                    <iframe width="560" height="315" src={`https://www.youtube.com/embed/${this.state.videoId2}`} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>               
+                    {/* <button onClick={this.negClicked}>  Previous Video  </button>
+                    <button onClick={this.posClicked}>  Next Video    </button> */}
               </div>
         );
   }

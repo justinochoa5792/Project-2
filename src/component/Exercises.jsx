@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import exercises from '../data.json'
 import {Link} from 'react-router-dom';
+
 class Exercises extends Component {
     componentDidMount = () => {
         this.setState({
@@ -17,8 +18,9 @@ class Exercises extends Component {
                 })
                 return newArr
     }
+     
+
     render() {
-        //let muscle = this.props.match.params.exerciseName
         console.log(this.props.match)
         return (
             <div>

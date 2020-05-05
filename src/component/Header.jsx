@@ -6,7 +6,7 @@ class Header extends Component {
         return (
             <div>
              <header><h1>Iron Lifestyle</h1> </header>
-             <Link to= '/'><h3 style={{backgroundColor:'#2BBBAD',color:'white'}}>Home</h3></Link> 
+             <Link to= '/'><h3 style={{backgroundColor:'#2BBBAD',color:'white',margin:'0'}}>Home</h3></Link> 
              
             </div>
         );

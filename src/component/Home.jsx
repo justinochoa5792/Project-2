@@ -6,7 +6,6 @@ class Home extends Component {
     render() {
         return (
             <div className='Gym'>
-            {/* <img style={{width:'100vw',height:'85vh'}} src='/images/gymphoto.jpg' alt='gym'/> */}
             <ul>
                <li><Link to='/Workout'><Card name="Workouts" 
                message=" A quick breakdown of muscle groups and there corresponding workouts." 

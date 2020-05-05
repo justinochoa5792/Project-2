@@ -25,6 +25,7 @@ ul{
   background-color:  #2BBBAD;
   color:white;
   padding: 0px;
+  margin:0px;
 } 
 
 footer{
@@ -32,12 +33,13 @@ footer{
   background-color:#2BBBAD ;
   padding: 10px;
   width: 100vw;
+  height: 5vh;
 }
 .Gym{
-  background-image:url('/images/gymphoto.jpg');
-  background-repeat: no-repeat;
+  background-image:url('/images/gymphoto2.jpg');
+  background-size: cover;
   width: 100vw;
-  height: 95vh;
+  height:70rem;
   display: grid;
   text-align: center;
 }
@@ -47,3 +49,22 @@ background-repeat: no-repeat;
 width:100vw;
 height: 100vh;
 }
+
+/* .col{
+  padding: 1rem;
+  background-color:rgba(0,0,0,.3);
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  } */
+  .col .homepage{
+      padding: 1rem;
+      margin: 1rem;
+      background-color:rgba(0,0,0,.3);
+      text-align: center;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      }
+    

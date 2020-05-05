@@ -28,20 +28,14 @@ ul{
   margin:0px;
 } 
 
-footer{
-  color:white;
-  background-color:#2BBBAD ;
-  padding: 10px;
-  width: 100vw;
-  height: 5vh;
-}
 .Gym{
-  background-image:url('/images/gymphoto2.jpg');
+  background-image:url('/images/gymphoto2.jpg'); 
   background-size: cover;
   width: 100vw;
-  height:70rem;
-  display: grid;
+  height:80rem;
+  display: flex;
   text-align: center;
+  align-items:center;
 }
 .Nutrition{
 background-image:url('/images/food.jpg');
@@ -50,14 +44,14 @@ width:100vw;
 height: 100vh;
 }
 
-/* .col{
+.col{
   padding: 1rem;
   background-color:rgba(0,0,0,.3);
   text-align: center;
   display:flex;
   justify-content: center;
   align-items: center;
-  } */
+  }
   .col .homepage{
       padding: 1rem;
       margin: 1rem;

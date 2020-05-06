@@ -43,6 +43,12 @@ background-repeat: no-repeat;
 width:100vw;
 height: 100vh;
 }
+.youpage{
+  background-image:url('/images/gymphoto2.jpg'); 
+  background-size: cover;
+  width: 100vw;
+  height:80rem;
+}
 
 .col{
   padding: 1rem;

@@ -8,7 +8,6 @@ var url = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=
 
 
 
-
 class youtube extends Component {
     componentDidMount = () => {
         this.getYoutubeData()
@@ -82,8 +81,8 @@ class youtube extends Component {
 
         console.log(this);
         return (
-              <div>
-              <h2>Lifting Videos</h2>
+              <div className="youpage">
+              <h2 style={{color:"white"}}>Lifting Videos</h2>
                     <iframe width="560" height="315" src={`https://www.youtube.com/embed/${this.state.videoId}`} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     <button onClick={this.negClicked}>  Previous Video  </button>
                     <button onClick={this.posClicked}>  Next Video    </button>   

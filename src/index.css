@@ -1,70 +1,68 @@
-
 body {
   /* background-image: url('/images/gymphoto.jpg'); */
-  padding:0;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
- header{
+header {
   display: grid;
   justify-content: center;
-  background-color:  #2BBBAD;
-  color:white;
+  background-color: #2bbbad;
+  color: white;
   padding: 0px;
-  margin:0px;
-} 
+  margin: 0px;
+}
 
-.Gym{
-  background-image:url('/images/gymphoto2.jpg'); 
+.Gym {
+  background-image: url("/images/gymphoto2.jpg");
   background-size: cover;
   width: 100vw;
-  height:80rem;
+  height: 80rem;
   display: flex;
   text-align: center;
-  align-items:center;
+  align-items: center;
 }
-.Nutrition{
-background-image:url('/images/food.jpg');
-background-repeat: no-repeat;
-width:100vw;
-height: 100vh;
+.Nutrition {
+  background-color: #eeeeee;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
 }
-.youpage{
-  background-image:url('/images/gymphoto2.jpg'); 
+.youpage {
+  background-color: #eeeeee;
   background-size: cover;
   width: 100vw;
-  height:80rem;
+  height: 80rem;
 }
 
-.col{
+.col {
   padding: 1rem;
-  background-color:rgba(0,0,0,.3);
+  background-color: rgba(0, 0, 0, 0.3);
   text-align: center;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  }
-  .col .homepage{
-      padding: 1rem;
-      margin: 1rem;
-      background-color:rgba(0,0,0,.3);
-      text-align: center;
-      display:flex;
-      justify-content: center;
-      align-items: center;
-      }
-    
+}
+.col .homepage {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

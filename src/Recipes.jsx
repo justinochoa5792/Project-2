@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Axios from "axios";
 import RecipeDetails from "./component/recipeDetails";
-import { NUTRITION } from "fitbit-api-handler/dist/constants/scopes";
 
 class Recipes extends Component {
   state = {
